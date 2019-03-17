@@ -1,4 +1,4 @@
-package cat000.p10.v1
+package cat001.p10.v1
 
 class Solution {
     fun isMatch(s: String, p: String): Boolean {
