@@ -1,13 +1,7 @@
 package cat000.p2.v1
 
-import cat000.p2.v2.ListNode
 import cat000.p2.v2.Solution
-
-class ListNode(var `val`: Int, var next: ListNode? = null) {
-    override fun toString(): String {
-        return "ListNode(`val`=$`val`, next=$next)"
-    }
-}
+import utils.ListNode
 
 class Solution {
     fun toBig(l1: ListNode?) =
@@ -32,8 +26,8 @@ class Solution {
 
 fun main(args: Array<String>) {
     val test = Solution()
-    val l1 = cat000.p2.v2.ListNode(2, cat000.p2.v2.ListNode(4, ListNode(3)))
-    val l2 = cat000.p2.v2.ListNode(5, cat000.p2.v2.ListNode(6, ListNode(4)))
+    val l1 = ListNode(2, ListNode(4, ListNode(3)))
+    val l2 = ListNode(5, ListNode(6, ListNode(4)))
     val ret = test.addTwoNumbers(l1, l2)
     print(ret)
 }
