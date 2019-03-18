@@ -1,11 +1,6 @@
 package cat000.p2.v2
 
-
-class ListNode(var `val`: Int, var next: ListNode? = null) {
-    override fun toString(): String {
-        return "ListNode(`val`=$`val`, next=$next)"
-    }
-}
+import utils.ListNode
 
 class Solution {
     fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
