@@ -1,7 +1,7 @@
 package cat006.p60.v1;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * 从头到尾一位一位的定位，确定当前数字是几
