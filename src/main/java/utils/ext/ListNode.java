@@ -11,6 +11,16 @@ public class ListNode {
 
     @Override
     public String toString() {
-        return val + "->" + next.toString();
+        return val + (next == null ? "" : "->" + next.toString());
+    }
+
+    public static ListNode parse(String str) {
+        ListNode head = new ListNode(-1);
+        ListNode cur = head;
+        for (String s : str.split("->")) {
+            cur.next = new ListNode(Integer.valueOf(s));
+            cur = cur.next;
+        }
+        return head.next;
     }
 }
