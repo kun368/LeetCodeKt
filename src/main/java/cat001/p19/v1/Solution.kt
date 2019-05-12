@@ -1,6 +1,6 @@
 package cat001.p19.v1
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
     fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {

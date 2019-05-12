@@ -1,6 +1,6 @@
 package cat020.p206.v2
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
     fun reverseList(head: ListNode?): ListNode? {

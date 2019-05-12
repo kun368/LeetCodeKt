@@ -1,6 +1,6 @@
 package cat014.p141.v1;
 
-import utils.ext.ListNode;
+import utils.java.ListNode;
 
 public class Solution {
     public boolean hasCycle(ListNode head) {

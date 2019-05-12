@@ -1,7 +1,7 @@
 package cat000.p2.v1
 
 import cat000.p2.v2.Solution
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
     fun toBig(l1: ListNode?) =

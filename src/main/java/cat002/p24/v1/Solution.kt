@@ -1,6 +1,6 @@
 package cat002.p24.v1
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
     fun swapPairs(head: ListNode?): ListNode? {

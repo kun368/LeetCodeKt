@@ -1,4 +1,4 @@
-package utils
+package utils.kotlin
 
 class ListNode(var `val`: Int, var next: ListNode? = null) {
 

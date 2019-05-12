@@ -1,6 +1,6 @@
 package cat020.p206.v1
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
 

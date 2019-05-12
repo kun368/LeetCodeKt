@@ -1,6 +1,6 @@
 package cat002.p25.v1
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 
 class Solution {

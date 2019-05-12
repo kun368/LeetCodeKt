@@ -1,6 +1,6 @@
 package cat014.p148.v1;
 
-import utils.ext.ListNode;
+import utils.java.ListNode;
 
 /**
  * 排序链表

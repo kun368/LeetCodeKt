@@ -1,6 +1,6 @@
 package cat008.p86.v1;
 
-import utils.ext.ListNode;
+import utils.java.ListNode;
 
 /**
  * 分隔链表

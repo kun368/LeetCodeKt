@@ -1,6 +1,6 @@
 package cat005.p57.v1
 
-import utils.Interval
+import utils.kotlin.Interval
 
 
 class Solution {
@@ -26,7 +26,7 @@ class Solution {
 
 fun main(args: Array<String>) {
     println(Solution().insert(arrayListOf(
-          Interval(1, 2), Interval(3, 5), Interval(6, 7), Interval(8, 10), Interval(12, 16)
+            Interval(1, 2), Interval(3, 5), Interval(6, 7), Interval(8, 10), Interval(12, 16)
     ), Interval(4, 8)))
 
     println(Solution().insert(arrayListOf(

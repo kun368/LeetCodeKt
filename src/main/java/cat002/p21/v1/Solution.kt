@@ -1,6 +1,6 @@
 package cat002.p21.v1
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
     fun mergeTwoLists(a: ListNode?, b: ListNode?): ListNode? {

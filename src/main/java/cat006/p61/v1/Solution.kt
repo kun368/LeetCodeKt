@@ -1,6 +1,6 @@
 package cat006.p61.v1
 
-import utils.ListNode
+import utils.kotlin.ListNode
 
 class Solution {
     fun rotateRight(head: ListNode?, k: Int): ListNode? {

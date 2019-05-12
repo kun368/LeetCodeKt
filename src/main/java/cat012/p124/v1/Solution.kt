@@ -1,6 +1,6 @@
 package cat012.p124.v1
 
-import utils.TreeNode
+import utils.kotlin.TreeNode
 
 // TODO solve
 class Solution {

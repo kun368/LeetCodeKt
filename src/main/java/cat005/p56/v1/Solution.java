@@ -1,7 +1,7 @@
 package cat005.p56.v1;
 
 
-import utils.ext.Interval;
+import utils.java.Interval;
 
 import java.util.ArrayList;
 import java.util.Arrays;
