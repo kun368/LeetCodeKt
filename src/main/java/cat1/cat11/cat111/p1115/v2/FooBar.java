@@ -28,8 +28,8 @@ class FooBar {
     public void bar(Runnable printBar) throws InterruptedException {
         for (int i = 0; i < n; i++) {
             s2.acquire();
-        	printBar.run();
-        	s1.release();
+            printBar.run();
+            s1.release();
         }
     }
 }
