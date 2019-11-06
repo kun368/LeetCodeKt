@@ -1,4 +1,4 @@
-package match.weekly161.p1;
+package cat1.cat12.cat124.p1247;
 
 class Solution {
     public int minimumSwap(String s1, String s2) {

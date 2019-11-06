@@ -1,4 +1,4 @@
-package match.weekly161.p3;
+package cat1.cat12.cat124.p1249;
 
 class Solution {
     public String minRemoveToMakeValid(String s) {
