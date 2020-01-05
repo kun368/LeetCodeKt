@@ -16,7 +16,7 @@ public class ArrayInputUtils {
 
     // ========================== 一维数组 ==========================
 
-    private static List<String> parseStrList1(String str) {
+    public static List<String> parseStrList1(String str) {
         try {
             return JSON.parseArray(str, String.class);
         } catch (Exception e) {
@@ -38,7 +38,7 @@ public class ArrayInputUtils {
 
     // ========================== 二维数组 ==========================
 
-    private static List<List<String>> parseStrList2(String str) {
+    public static List<List<String>> parseStrList2(String str) {
         List<List<String>> ret = new ArrayList<>();
         JSONArray jsonArray = JSON.parseArray(str);
         for (int i = 0; i < jsonArray.size(); ++i) {
