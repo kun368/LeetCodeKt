@@ -1,39 +1,21 @@
-package match.weekly170.p4;
+package match.weekly170.p4.v2;
 
 class Solution {
-
-    private int[][] dp;
-
-    private int calc(String s, int ax, int ay, int bx, int by) {
-        int N = ay - ax, M = by - bx;
-        for (int i = 0; i <= N; ++i) {
-            for (int j = 0; j <= M; ++j) {
-                if (i == 0 || j == 0)  {
-                    dp[i][j] = Math.max(i, j);
-                    continue;
-                }
-                int c1 = s.charAt(ay - i), c2 = s.charAt(bx + j - 1);
+    public int minInsertions(String s) {
+        int N = s.length();
+        String r = new StringBuilder(s).reverse().toString();
+        int[][] dp = new int[N + 1][N + 1];
+        for (int i = 1; i <= N; ++i) {
+            for (int j = 1; j <= N; ++j) {
+                char c1 = s.charAt(i - 1), c2 = r.charAt(j - 1);
                 if (c1 == c2) {
-                    dp[i][j] = dp[i - 1][j - 1];
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
-                    dp[i][j] = Math.min(dp[i - 1][j] + 1, Math.min(dp[i][j - 1] + 1, dp[i - 1][j - 1] + 2));
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                 }
             }
         }
-        return dp[N][M];
-    }
-
-    public int minInsertions(String s) {
-        if (s.length() <= 1) {
-            return 0;
-        }
-        dp = new int[s.length() + 1][s.length() + 1];
-        int ans = Integer.MAX_VALUE;
-        for (int i = 0; i < s.length(); ++i) {
-            ans = Math.min(ans, calc(s, 0, i, i + 1, s.length()));
-            ans = Math.min(ans, calc(s, 0, i, i, s.length()));
-        }
-        return ans;
+        return N - dp[N][N];
     }
 }
 
@@ -47,7 +29,6 @@ public class Main {
         System.out.println(new Solution().minInsertions("zjveiiwvc"));
         System.out.println(new Solution().minInsertions("jqmowntvxbbtyxtzpulsbzxwwlzbtkglzagtpkxrgpyvljtojqasfdimmjdjcmcpfrpmmkwiinxgedbsdaokfzsvxslsqiqvjqighhkvekpaiehmdacxvuckvfaecbdxlolcaxeklqnfpvphuoefxdypuxblwbvtzhctnojwkvkeknpijznnmqalqhmvumckefrbqxjeheamomttfunnrwasfczbcjgfprwogiswjitjiqlzalduxhccwklkcdylppstmtmkbviaxxjomkimzinrufwpraftmtprkaoybeablqubeovrvimojdhpttrhilnhvvtvnabdmkykwirbxmlqsatkydynxatbtezynlkvfjqahoezamptrizjsypggmewaconvrdzddftsbzrxarwymzujynabiozezbstejglqdcxiymqzsdebdtdweebfsbkcxdunaxgaymzmvoyukaqctdjggyebfxduwhpzctzylkyprb"));
         System.out.println(new Solution().minInsertions("plkofzuofubstkjvmqpqnteukadjglraioqglvnhcjqwejdsmspzhvdsaopousfcbvmqtcndttciosvvkgvrfilkmnjkdeothndujhffchoalbtaltwwwtlatblaohcffhjudnhtoedkjnmklifrvgkvvsoicttdnctqmvbcfsuopoasdvhzpsmsdjewqjchnvlgqoiarlgjdakuetnqpqmvjktsbufouzfoklp"));
-
-
     }
 }
+
