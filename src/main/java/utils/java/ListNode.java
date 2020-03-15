@@ -18,7 +18,7 @@ public class ListNode {
         ListNode head = new ListNode(-1);
         ListNode cur = head;
         for (String s : str.split("->")) {
-            cur.next = new ListNode(Integer.valueOf(s.trim()));
+            cur.next = new ListNode(Integer.parseInt(s.trim()));
             cur = cur.next;
         }
         return head.next;
