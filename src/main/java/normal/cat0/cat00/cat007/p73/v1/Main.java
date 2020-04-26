@@ -1,37 +1,22 @@
 package normal.cat0.cat00.cat007.p73.v1;
 
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
-
-    private static final int fuck = -0x3f3f3f3f;
-
     public void setZeroes(int[][] matrix) {
-        while (true) {
-            int x = -1, y = -1;
-            for (int i = 0; i < matrix.length; ++i) {
-                for (int j = 0; j < matrix[i].length; ++j) {
-                    if (matrix[i][j] == 0) {
-                        x = i;
-                        y = j;
-                        break;
-                    }
-                }
-                if (x != -1) break;
-            }
-            System.out.println("x = " + x + ", y = " + y);
-            if (x == -1) break;
-            for (int i = 0; i < matrix.length; ++i) {
-                for (int j = 0; j < matrix[i].length; ++j) {
-                    if ((i == x || j == y) && matrix[i][j] != 0) {
-                        matrix[i][j] = fuck;
-                    }
+        int N = matrix.length, M = matrix[0].length;
+        Set<Integer> fx = new HashSet<>(N), fy = new HashSet<>(M);
+        for (int i = 0; i < N; ++i) {
+            for (int j = 0; j < M; ++j) {
+                if (matrix[i][j] == 0) {
+                    fx.add(i);
+                    fy.add(j);
                 }
             }
         }
-        for (int i = 0; i < matrix.length; ++i) {
-            for (int j = 0; j < matrix[i].length; ++j) {
-                if (matrix[i][j] == fuck) {
+        for (int i = 0; i < N; ++i) {
+            for (int j = 0; j < M; ++j) {
+                if (fx.contains(i) || fy.contains(j)) {
                     matrix[i][j] = 0;
                 }
             }
