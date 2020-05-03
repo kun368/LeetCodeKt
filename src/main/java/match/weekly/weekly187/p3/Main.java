@@ -4,34 +4,39 @@ import java.util.TreeMap;
 
 class Solution {
 
-    TreeMap<Integer, Integer> set;
+    private static class MultiSet {
 
-    int maxDiff() {
-        if (set.isEmpty()) return 0;
-        return set.lastKey() - set.firstKey();
-    }
+        public TreeMap<Integer, Integer> map = new TreeMap<>();
 
+        public void add(int x) {
+            map.merge(x, 1, Integer::sum);
+        }
 
-    void add(int x) {
-        set.merge(x, 1, Integer::sum);
-    }
+        public void removeOnce(int x) {
+            map.computeIfPresent(x, (key, oldValue) -> {
+                int t = oldValue - 1;
+                return t <= 0 ? null : t;
+            });
+        }
 
-    void remove(int x) {
-        if (set.containsKey(x)) {
-            int o = set.get(x) - 1;
-            if (o <= 0) set.remove(x);
-            else set.put(x, o);
+        public boolean contains(int x) {
+            return map.containsKey(x);
+        }
+
+        int maxDiff() {
+            if (map.isEmpty()) return 0;
+            return map.lastKey() - map.firstKey();
         }
     }
 
 
     public int longestSubarray(int[] nums, int limit) {
-        set = new TreeMap<>();
+        MultiSet set = new MultiSet();
         int a = 0, b = 0, ans = 0;
         while (b < nums.length) {
-            add(nums[b++]);
-            while (a < b && maxDiff() > limit) {
-                remove(nums[a++]);
+            set.add(nums[b++]);
+            while (a < b && set.maxDiff() > limit) {
+                set.removeOnce(nums[a++]);
             }
             ans = Math.max(ans, b - a);
         }
