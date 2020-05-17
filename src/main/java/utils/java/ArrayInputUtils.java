@@ -4,6 +4,7 @@ import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.ArrayUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.TypeReference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -39,12 +40,8 @@ public class ArrayInputUtils {
     // ========================== 二维数组 ==========================
 
     public static List<List<String>> parseStrList2(String str) {
-        List<List<String>> ret = new ArrayList<>();
-        JSONArray jsonArray = JSON.parseArray(str);
-        for (int i = 0; i < jsonArray.size(); ++i) {
-            ret.add(jsonArray.getJSONArray(i).toJavaList(String.class));
-        }
-        return ret;
+        return JSON.parseObject(str, new TypeReference<List<List<String>>>() {
+        });
     }
 
     public static int[][] parseIntArr2(String str) {
