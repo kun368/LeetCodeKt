@@ -10,6 +10,8 @@ public class FastCode {
     // → ↓ ← ↑
     private static final int[][] dir = {{0, 0}, {0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
+    // MAX
+    private static final int MAX = 0x3f3f3f3f;
 
     private static class MultiSet {
 
