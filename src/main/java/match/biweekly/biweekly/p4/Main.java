@@ -1,32 +1,15 @@
 package match.biweekly.biweekly.p4;
 
-import lombok.ToString;
-
-import java.util.*;
-
 class Solution {
-
-    @ToString
-    static class Span {
-        int start, end;
-
-        public Span(int start, int end) {
-            this.start = start;
-            this.end = end;
-        }
-    }
-
     public int minNumberOperations(int[] target) {
-        Map<Integer, TreeSet<Integer>> idxMap = new HashMap<>();
-        for (int i = 0; i < target.length; ++i) {
-            idxMap.computeIfAbsent(target[i], it -> new TreeSet<>());
-            idxMap.get(target[i]).add(i);
+        int ans = 0, pre = 0;
+        for (int i : target) {
+            if (i > pre) {
+                ans += i - pre;
+            }
+            pre = i;
         }
-        Queue<Span> qu = new ArrayDeque<>();
-        qu.add(new Span(0, target.length - 1));
-
-
-        return 0;
+        return ans;
     }
 }
 
