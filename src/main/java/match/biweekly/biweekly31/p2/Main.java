@@ -1,4 +1,4 @@
-package match.biweekly.biweekly.p2;
+package match.biweekly.biweekly31.p2;
 
 
 class Solution {

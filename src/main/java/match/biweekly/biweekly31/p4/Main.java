@@ -1,4 +1,4 @@
-package match.biweekly.biweekly.p4;
+package match.biweekly.biweekly31.p4;
 
 class Solution {
     public int minNumberOperations(int[] target) {

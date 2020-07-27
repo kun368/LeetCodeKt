@@ -1,4 +1,4 @@
-package match.biweekly.biweekly.p1;
+package match.biweekly.biweekly31.p1;
 
 class Solution {
     public int countOdds(int low, int high) {
