@@ -1,6 +1,6 @@
 package utils.java;
 
-import java.util.*;
+import java.util.TreeMap;
 
 public class FastCode {
 

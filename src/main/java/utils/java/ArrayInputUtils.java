@@ -30,11 +30,15 @@ public class ArrayInputUtils {
     }
 
     public static int[] parseIntArr1(String str) {
-        return ArrayUtil.unWrap(Convert.toIntArray(parseStrList1(str)));
+        return json2Array(str, "[I");
+    }
+
+    public static char[] parseCharArr1(String str) {
+        return json2Array(str, "[C");
     }
 
     public static long[] parseLongArr1(String str) {
-        return ArrayUtil.unWrap(Convert.toLongArray(parseStrList1(str)));
+        return json2Array(str, "[L");
     }
 
     // ========================== 二维数组 ==========================
@@ -45,21 +49,25 @@ public class ArrayInputUtils {
     }
 
     public static int[][] parseIntArr2(String str) {
-        List<List<String>> lists = parseStrList2(str);
-        int[][] ret = new int[lists.size()][];
-        for (int i = 0; i < lists.size(); ++i) {
-            ret[i] = ArrayUtil.unWrap(Convert.toIntArray(lists.get(i)));
-        }
-        return ret;
+        return json2Array(str, "[[I");
+    }
+
+    public static char[][] parseCharArr2(String str) {
+        return json2Array(str, "[[C");
     }
 
     public static long[][] parseLongArr2(String str) {
-        List<List<String>> lists = parseStrList2(str);
-        long[][] ret = new long[lists.size()][];
-        for (int i = 0; i < lists.size(); ++i) {
-            ret[i] = ArrayUtil.unWrap(Convert.toLongArray(lists.get(i)));
+        return json2Array(str, "[[L");
+    }
+
+    @SuppressWarnings("unchecked")
+    private static <T> T json2Array(String str, String className) {
+        try {
+            return (T) JSON.parseObject(str, Class.forName(className));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
-        return ret;
     }
 
     // ========================== 测试 ==========================
