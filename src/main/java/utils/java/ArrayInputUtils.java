@@ -48,6 +48,11 @@ public class ArrayInputUtils {
         });
     }
 
+    public static List<List<Integer>> parseIntList2(String str) {
+        return JSON.parseObject(str, new TypeReference<List<List<Integer>>>() {
+        });
+    }
+
     public static int[][] parseIntArr2(String str) {
         return json2Array(str, "[[I");
     }

@@ -13,11 +13,11 @@ public class FastCode {
     // MAX
     private static final int MAX = 0x3f3f3f3f;
 
-    private static class MultiSet {
+    private static class Counter {
 
         public TreeMap<Integer, Integer> map = new TreeMap<>();
 
-        public void add(int x) {
+        public void addOnce(int x) {
             map.merge(x, 1, Integer::sum);
         }
 
@@ -26,10 +26,6 @@ public class FastCode {
                 int t = oldValue - 1;
                 return t <= 0 ? null : t;
             });
-        }
-
-        public boolean contains(int x) {
-            return map.containsKey(x);
         }
     }
 }
