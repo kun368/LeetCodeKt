@@ -6,9 +6,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.annotation.JSONType;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @JSONType(orders = {"val", "left", "right"})
 public class TreeNode {
@@ -16,6 +14,9 @@ public class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;
+
+    public TreeNode() {
+    }
 
     public TreeNode(int val) {
         this.val = val;
@@ -60,6 +61,30 @@ public class TreeNode {
 
     public String toJSONString() {
         return JSON.toJSONString(this, SerializerFeature.PrettyFormat);
+    }
+
+    public List<Integer> toLeetCodeList() {
+        List<Integer> ret = new ArrayList<>();
+        Queue<TreeNode> qu = new LinkedList<>();
+        qu.add(this);
+        while (!qu.isEmpty()) {
+            TreeNode top = qu.poll();
+            ret.add(top == null ? null : top.val);
+            if (top != null) {
+                qu.add(top.left);
+                qu.add(top.right);
+            }
+        }
+        while (ret.get(ret.size() - 1) == null) {
+            ret.remove(ret.size() - 1);
+        }
+        return ret;
+    }
+
+    public String toLeetCodeString() {
+        StringJoiner sj = new StringJoiner(",", "[", "]");
+        toLeetCodeList().forEach(it -> sj.add(String.valueOf(it)));
+        return sj.toString();
     }
 
 
