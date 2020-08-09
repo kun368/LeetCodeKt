@@ -1,8 +1,12 @@
 package utils.java;
 
+import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.ClassUtil;
-import cn.hutool.core.util.ReflectUtil;
 import com.alibaba.fastjson.JSON;
+
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 调试方便Utils
@@ -25,6 +29,15 @@ public class DebugUtils extends ArrayInputUtils {
             } else {
                 System.out.println();
             }
+        }
+    }
+
+    public static List<String> readIn() {
+        try {
+            FileInputStream stream = new FileInputStream("in.txt");
+            return IoUtil.readLines(stream, "utf8", new ArrayList<>());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }

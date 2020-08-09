@@ -1,7 +1,5 @@
 package utils.java.fastcode;
 
-import java.util.TreeMap;
-
 public class FastCode {
 
     // 10^9 + 7
