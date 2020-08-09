@@ -1,7 +1,5 @@
 package utils.java.fastcode;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Objects;
 
 @SuppressWarnings("unchecked")
@@ -33,7 +31,7 @@ public class Pair<K, V> implements Comparable<Pair<K, V>> {
     }
 
     @Override
-    public int compareTo(@NotNull Pair<K, V> o) {
+    public int compareTo(Pair<K, V> o) {
         int t = compare(this.L, o.L);
         return t == 0 ? compare(this.R, o.R) : t;
     }
