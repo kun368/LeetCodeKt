@@ -1,12 +1,52 @@
 package match.weekly.weekly244.p4
+import java.math.BigInteger
+import java.util.*
+import kotlin.collections.ArrayList
+
+private fun <T> MutableList<T>.popLast() = this.removeAt(size - 1)
 
 class Solution {
 
-    private val mod: Long = 1000000007
+    val mod: Long = 1000000007
+    val maxBox = 100005
 
     fun minWastedSpace(packages: IntArray, boxes: Array<IntArray>): Int {
+        packages.sort()
+        val okBoxes = arrayListOf<MutableList<Int>>()
+        for (i in boxes.indices) {
+            boxes[i].sort()
+            if (boxes[i].last() >= packages.last()) {
+                val t = boxes[i].toMutableList()
+                t.add(maxBox)
+                okBoxes.add(t)
+            }
+        }
+        val idxMap = TreeMap<Int, ArrayList<Int>>()
+        for (i in okBoxes.indices) {
+            for (j in okBoxes[i]) {
+                idxMap.getOrPut(j) { ArrayList() }.add(i)
+            }
+        }
+        val idxList = idxMap.toList().reversed()
 
-        return 0
+        var tsum = BigInteger.ZERO
+        packages.forEach { tsum += maxBox.toBigInteger() - it.toBigInteger() }
+        val ans = Array(okBoxes.size) { tsum }
+        if (ans.isEmpty()) return -1
+
+        val remains = packages.toMutableList()
+        for (i in idxList) {
+            if (i.first >= maxBox) continue
+            while (remains.isNotEmpty() && remains.last() > i.first) {
+                remains.popLast()
+            }
+            if (remains.isEmpty()) break
+            for (j in i.second) {
+                val save = remains.size.toLong() * (okBoxes[j].popLast() - i.first)
+                ans[j] -= save.toBigInteger()
+            }
+        }
+        return ans.min()!!.mod(mod.toBigInteger()).toInt()
     }
 }
 
