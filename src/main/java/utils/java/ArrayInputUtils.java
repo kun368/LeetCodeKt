@@ -1,17 +1,14 @@
 package utils.java;
 
 import cn.hutool.core.convert.Convert;
-import cn.hutool.core.util.ArrayUtil;
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.TypeReference;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * 解析数组输入方便Utils
+ * 解析数组输入方便 Utils
  */
 public class ArrayInputUtils {
 
