@@ -1,24 +1,39 @@
 package normal.cat1.cat11.cat110.p1104.v1
 
-
 class Solution {
-    fun distributeCandies(candies: Int, num_people: Int): IntArray {
-        val ret = Array(num_people) { 0 }
-        var rem = candies
-        var cur = 1
-        var idx = 0
-        while (rem > 0) {
-            val add = minOf(rem, cur)
-            ret[idx] += add
-            cur += 1
-            rem -= add
-            idx = (idx + 1) % num_people
+    fun gen(maxn: Int): List<Int> {
+        val arr = ArrayList<Int>()
+        var cnt = 1
+        var max = 0
+        var rev = false
+        while (max < maxn) {
+            val span = (max + 1) until (max + 1 + cnt)
+            arr.addAll(if (rev) span.reversed().toList() else span.toList())
+            rev = !rev
+            max = span.last
+            cnt *= 2
         }
-        return ret.toIntArray()
+        return arr
+    }
+
+    fun pathInZigZagTree(label: Int): List<Int> {
+        val gen = gen(label)
+        val ret = ArrayList<Int>()
+        var idx = gen.indexOf(label)
+        while (true) {
+            ret.add(gen[idx])
+            if (idx ==0) {
+                break
+            }
+            idx = (idx - 1) / 2
+        }
+        return ret.reversed()
     }
 }
 
 fun main() {
-    println(Solution().distributeCandies(7, 4).toList())
-    println(Solution().distributeCandies(10, 3).toList())
+    println(Solution().pathInZigZagTree(14))
+    println(Solution().pathInZigZagTree(26))
+    println(Solution().pathInZigZagTree(1))
+    println(Solution().pathInZigZagTree(1000000))
 }

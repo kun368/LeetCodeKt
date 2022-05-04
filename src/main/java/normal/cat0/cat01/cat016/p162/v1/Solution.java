@@ -1,7 +1,7 @@
 package normal.cat0.cat01.cat016.p162.v1;
 
 /**
- * 162. Ѱ�ҷ�ֵ
+ * 162. 寻找峰值
  */
 class Solution {
 

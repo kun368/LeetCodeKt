@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * ���򣬴����ұ���ÿһ������Ȼ��˫ָ�������������ּ���������0
- */
 class Solution {
 
     public static void main(String[] args) {

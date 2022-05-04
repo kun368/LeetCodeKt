@@ -1,36 +1,47 @@
 package normal.cat1.cat11.cat110.p1106.v1
 
 class Solution {
-    fun minHeightShelves(books: Array<IntArray>, shelf_width: Int): Int {
-        val dp = Array(books.size) { Int.MAX_VALUE / 2 }
-        dp[0] = books[0][1]
-        for (i in 1 until books.size) {
-            var kuan = 0
-            var maxh = 0
-            for (j in i downTo 0) {
-                kuan += books[j][0]
-                if (kuan > shelf_width) {
-                    break
+    fun parseBoolExpr(exp: String): Boolean {
+        if ('(' !in exp) {
+            return 't' in exp
+        }
+        val sub = exp.substring(2, exp.length - 1)
+        val arr = ArrayList<String>()
+        var i = 0
+        while (i < sub.length) {
+            if (sub[i] !in arrayOf('!', '&', '|')) {
+                arr += sub.substring(i, i + 1)
+                i += 2
+            } else {
+                var end = sub.length - 1
+                for (j in i until sub.length) {
+                    val c = sub[j]
+                    if (c == ')' && sub.substring(i, j + 1).count { it == '(' } == sub.substring(i, j + 1).count { it == ')' }) {
+                        end = j
+                        break
+                    }
                 }
-                maxh = maxOf(maxh, books[j][1])
-                dp[i] = minOf(dp[i], dp.getOrElse(j - 1) { 0 } + maxh)
+                arr += sub.substring(i, end + 1)
+                i = end + 2
             }
         }
-        return dp.last()
+        val res = arr.map { parseBoolExpr(it) }
+        return when {
+            exp[0] == '&' -> return res.all { it }
+            exp[0] == '|' -> return res.any { it }
+            exp[0] == '!' -> return !res.all { it }
+            else -> false
+        }
     }
 }
 
 fun main() {
-    println(Solution().minHeightShelves(arrayOf(
-            intArrayOf(1, 1),
-            intArrayOf(2, 3),
-            intArrayOf(2, 3),
-            intArrayOf(1, 1),
-            intArrayOf(1, 1),
-            intArrayOf(1, 1),
-            intArrayOf(1, 2)
-    ), 4))
-    println(Solution().minHeightShelves(arrayOf(
-            intArrayOf(1, 1)
-    ), 1))
+    println(Solution().parseBoolExpr("!(f)"))
+    println(Solution().parseBoolExpr("|(f,t)"))
+    println(Solution().parseBoolExpr("&(t,f)"))
+    println(Solution().parseBoolExpr("|(&(t,f,t),!(t))"))
+    println(Solution().parseBoolExpr("t"))
+    println(Solution().parseBoolExpr("f"))
+    println(Solution().parseBoolExpr("!(&(!(t),&(f),|(f)))"))
+
 }

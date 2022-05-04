@@ -1,8 +1,7 @@
 package normal.cat0.cat06.cat064.p647.v1;
 
 /**
- * 647. �����Ӵ�
- * Ϊɶͬ���Ĵ��룬kotlin��������ʱ��java�͹��ˣ�
+ * 647. 回文子串
  */
 class Solution {
     public int countSubstrings(String s) {
