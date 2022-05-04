@@ -10,4 +10,28 @@ public class FastCode {
 
     // MAX
     private static final int MAX = 0x3f3f3f3f;
+
+    private static int lowerBound(int[] a, int low, int high, int element) {
+        while (low < high) {
+            int middle = low + (high - low) / 2;
+            if (element > a[middle]) {
+                low = middle + 1;
+            } else {
+                high = middle;
+            }
+        }
+        return low;
+    }
+
+    private static int upperBound(int[] a, int low, int high, int element) {
+        while (low < high) {
+            int middle = low + (high - low) / 2;
+            if (a[middle] > element) {
+                high = middle;
+            } else {
+                low = middle + 1;
+            }
+        }
+        return low;
+    }
 }
