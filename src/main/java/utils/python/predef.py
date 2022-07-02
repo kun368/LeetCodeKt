@@ -1,6 +1,7 @@
 from typing import *
 from collections import *
 import itertools
+import functools
 
 
 # Definition for a binary tree node.
