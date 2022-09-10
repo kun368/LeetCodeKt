@@ -5,6 +5,7 @@ import itertools
 import functools
 import string
 import heapq
+import bisect
 
 
 # Definition for a binary tree node.
@@ -15,6 +16,8 @@ class TreeNode:
         self.right: TreeNode = right
 
     def __repr__(self):
+        if not self.left and not self.right:
+            return str(self.val)
         return str(self.__dict__)
 
     @staticmethod
