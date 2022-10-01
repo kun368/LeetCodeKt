@@ -11,3 +11,13 @@
     - 例如第344题，放在 cat0 > cat03 > cat034 > p344 包下
     - 例如第1042题，放在 cat1 > cat10 > cat104 > p1042 包下
 - 部分题目有多种解法版本，放在 v1/v2/v3...下
+
+
+---
+
+[LeetCode](https://leetcode-cn.com/) Kotlin/Java/Python implementation
+
+- Package names are arranged according to the problem number: cat{number/1000} > cat{number/100} > cat{number/10} > p{number}
+  - For example, question 344, put it under the package cat0 > cat03 > cat034 > p344
+  - For example, question 1042, put it under the package cat1 > cat10 > cat104 > p1042
+- Some problems have multiple solution versions, which are placed under v1/v2/v3...
