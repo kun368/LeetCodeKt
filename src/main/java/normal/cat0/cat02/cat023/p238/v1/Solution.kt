@@ -15,6 +15,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().productExceptSelf(intArrayOf(1, 2, 3, 4)).toList())
 }

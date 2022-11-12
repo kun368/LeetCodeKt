@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     for (i in 1..30) {
         println(Solution().countAndSay(i))
     }

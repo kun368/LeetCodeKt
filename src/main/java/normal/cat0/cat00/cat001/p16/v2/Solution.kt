@@ -25,7 +25,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().threeSumClosest(intArrayOf(-1, 2, 1, -4), 1))
     println(Solution().threeSumClosest(intArrayOf(1, 1, 1, 1), 4))
     println(Solution().threeSumClosest(intArrayOf(0, 1, 2), 0))

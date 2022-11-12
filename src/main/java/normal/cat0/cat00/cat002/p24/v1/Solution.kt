@@ -23,6 +23,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().swapPairs(ListNode.parse("1->2->3->4")))
 }

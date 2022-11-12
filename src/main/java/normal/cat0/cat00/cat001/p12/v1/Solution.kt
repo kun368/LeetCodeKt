@@ -32,7 +32,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().intToRoman(3))
     println(Solution().intToRoman(4))
     println(Solution().intToRoman(9))

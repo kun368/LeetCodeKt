@@ -26,7 +26,7 @@ class Solution {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().gcdOfStrings("ABCABC", "ABC"))
     println(Solution().gcdOfStrings("ABABAB", "ABAB"))
     println(Solution().gcdOfStrings("AA", "A"))

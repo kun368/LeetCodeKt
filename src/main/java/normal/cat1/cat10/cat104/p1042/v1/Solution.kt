@@ -23,7 +23,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().gardenNoAdj(3, arrayOf(
             intArrayOf(1, 2),
             intArrayOf(2, 3),

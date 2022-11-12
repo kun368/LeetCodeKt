@@ -1,6 +1,6 @@
 package normal.cat0.cat00.cat004.p45.v1;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 class Solution {
     public int jump(int[] nums) {
@@ -18,7 +18,7 @@ class Solution {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Solution().jump(ArrayInputUtils.parseIntArr1("[2,3,1,1,4]")));
-        System.out.println(new Solution().jump(ArrayInputUtils.parseIntArr1("[2,3,0,1,4]")));
+        System.out.println(new Solution().jump(DebugUtils.parseIntArr1("[2,3,1,1,4]")));
+        System.out.println(new Solution().jump(DebugUtils.parseIntArr1("[2,3,0,1,4]")));
     }
 }

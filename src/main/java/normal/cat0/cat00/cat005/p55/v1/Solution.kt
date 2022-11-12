@@ -11,7 +11,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().canJump(intArrayOf(2, 3, 1, 1, 4)))
     println(Solution().canJump(intArrayOf(3, 2, 1, 0, 4)))
 }

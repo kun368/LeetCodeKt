@@ -16,6 +16,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().uniquePaths(23, 12))
 }

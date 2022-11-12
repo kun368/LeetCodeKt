@@ -37,6 +37,6 @@ class Solution {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Solution().balanceBST(TreeNode.parse("[1,null,2,null,3,null,4,null,null]")).toJSONString());
+        System.out.println(new Solution().balanceBST(TreeNode.parse("[1,null,2,null,3,null,4,null,null]")));
     }
 }

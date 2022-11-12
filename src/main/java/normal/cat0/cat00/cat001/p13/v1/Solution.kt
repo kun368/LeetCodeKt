@@ -5,7 +5,7 @@ class Solution {
         val mp = mapOf('I' to 1, 'V' to 5, 'X' to 10, 'L' to 50, 'C' to 100, 'D' to 500, 'M' to 1000)
         var sum = 0
         var pre = Int.MAX_VALUE
-        s.map { mp[it] ?: 0 } .forEachIndexed { idx, cur ->
+        s.map { mp[it] ?: 0 } .forEachIndexed { _, cur ->
             sum += cur + if (pre < cur) -2 * pre else 0
             pre = cur
         }
@@ -13,7 +13,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().romanToInt("III"))
     println(Solution().romanToInt("IV"))
     println(Solution().romanToInt("IX"))

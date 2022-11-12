@@ -30,7 +30,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().minFlips("111000"))
     println(Solution().minFlips("010"))
     println(Solution().minFlips("1110"))

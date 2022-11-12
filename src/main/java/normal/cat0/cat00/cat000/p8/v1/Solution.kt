@@ -23,7 +23,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().myAtoi("42"))
     println(Solution().myAtoi("   -42"))
     println(Solution().myAtoi("4193 with words"))

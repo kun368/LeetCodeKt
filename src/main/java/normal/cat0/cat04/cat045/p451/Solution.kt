@@ -4,7 +4,7 @@ class Solution {
     fun frequencySort(s: String) = s.groupBy { it }.mapValues { -it.value.size }.run { s.toList().sortedWith(compareBy(this::get, { it })).joinToString("") }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().frequencySort("tree"))
     println(Solution().frequencySort("cccaaa"))
     println(Solution().frequencySort("Aabb"))

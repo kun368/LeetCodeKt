@@ -33,7 +33,7 @@ class Solution {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().totalNQueens(4))
     println(Solution().totalNQueens(8))
     println(Solution().totalNQueens(12))

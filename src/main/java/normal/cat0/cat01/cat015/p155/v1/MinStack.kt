@@ -20,7 +20,7 @@ class MinStack() {
     fun getMin() = min.first
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val minStack = MinStack()
     minStack.push(-2)
     minStack.push(0)

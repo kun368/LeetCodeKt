@@ -5,7 +5,7 @@ class Solution {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().maxProfit(intArrayOf(7, 1, 5, 3, 6, 4)))
     println(Solution().maxProfit(intArrayOf(1, 2, 3, 4, 5)))
     println(Solution().maxProfit(intArrayOf(7, 6, 4, 3, 1)))

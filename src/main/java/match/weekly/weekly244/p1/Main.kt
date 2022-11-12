@@ -25,7 +25,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(
         Solution().findRotation(
             arrayOf(

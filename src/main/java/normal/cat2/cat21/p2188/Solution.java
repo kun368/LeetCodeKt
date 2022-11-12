@@ -1,6 +1,6 @@
 package normal.cat2.cat21.p2188;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.Arrays;
 
@@ -31,10 +31,10 @@ class Solution {
 
     public static void main(String[] args) {
         System.out.println(new Solution().minimumFinishTime(
-                ArrayInputUtils.parseIntArr2("[[2,3],[3,4]]"), 5, 4
+                DebugUtils.parseIntArr2("[[2,3],[3,4]]"), 5, 4
         ));
         System.out.println(new Solution().minimumFinishTime(
-                ArrayInputUtils.parseIntArr2("[[1,10],[2,2],[3,4]]"), 6, 5
+                DebugUtils.parseIntArr2("[[1,10],[2,2],[3,4]]"), 6, 5
         ));
     }
 }

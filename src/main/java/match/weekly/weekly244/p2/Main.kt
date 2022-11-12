@@ -12,7 +12,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().reductionOperations(intArrayOf(5, 1, 3)))
     println(Solution().reductionOperations(intArrayOf(1, 1, 1)))
     println(Solution().reductionOperations(intArrayOf(1, 1, 2, 2, 3)))

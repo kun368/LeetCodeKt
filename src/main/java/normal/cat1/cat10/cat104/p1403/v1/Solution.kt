@@ -17,6 +17,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().maxSumAfterPartitioning(intArrayOf(1, 15, 7, 9, 2, 5, 10), 3)) //84
 }

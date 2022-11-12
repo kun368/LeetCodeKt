@@ -9,7 +9,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().longestCommonPrefix(arrayOf()))
     println(Solution().longestCommonPrefix(arrayOf("")))
     println(Solution().longestCommonPrefix(arrayOf("flower", "flow", "flight")))

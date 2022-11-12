@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().searchInsert(intArrayOf(1, 3, 5, 6), 5))
     println(Solution().searchInsert(intArrayOf(1, 3, 5, 6), 2))
     println(Solution().searchInsert(intArrayOf(1, 3, 5, 6), 7))

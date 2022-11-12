@@ -6,7 +6,7 @@ class Solution {
         if (arr.size <= 1) {
             return leftJoin(arr, maxWidth)
         }
-        val remain = maxWidth - arr.sumBy { it.length }
+        val remain = maxWidth - arr.sumOf { it.length }
         val space = remain / (arr.size - 1)
         val addOne = remain % (arr.size - 1)
         val sb = StringBuffer()
@@ -45,7 +45,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().fullJustify(arrayOf("This", "is", "an", "example", "of", "text", "justification."), 16))
     println(Solution().fullJustify(arrayOf("What", "must", "be", "acknowledgment", "shall", "be"), 16))
     println(Solution().fullJustify(arrayOf("Science", "is", "what", "we", "understand", "well", "enough", "to", "explain",

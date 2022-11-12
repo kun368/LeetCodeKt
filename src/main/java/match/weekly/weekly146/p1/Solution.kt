@@ -6,7 +6,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().numEquivDominoPairs(arrayOf(
             intArrayOf(1, 2),
             intArrayOf(2, 1),

@@ -15,7 +15,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val arr = intArrayOf(1, 2, 3, 0, 0, 0)
     Solution().merge(arr, 3, intArrayOf(2, 5, 6), 3)
     println(arr.toList())

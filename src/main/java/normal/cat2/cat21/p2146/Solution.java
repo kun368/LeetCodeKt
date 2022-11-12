@@ -1,6 +1,6 @@
 package normal.cat2.cat21.p2146;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -68,25 +68,25 @@ class Solution {
 
     public static void main(String[] args) {
         System.out.println(new Solution().highestRankedKItems(
-                ArrayInputUtils.parseIntArr2("[[1,2,0,1],[1,3,0,1],[0,2,5,1]]"),
+                DebugUtils.parseIntArr2("[[1,2,0,1],[1,3,0,1],[0,2,5,1]]"),
                 new int[]{2, 5},
                 new int[]{0, 0},
                 3
         )); // [[0, 1], [1, 1], [2, 1]]
         System.out.println(new Solution().highestRankedKItems(
-                ArrayInputUtils.parseIntArr2("[[1,2,0,1],[1,3,3,1],[0,2,5,1]]"),
+                DebugUtils.parseIntArr2("[[1,2,0,1],[1,3,3,1],[0,2,5,1]]"),
                 new int[]{2, 3},
                 new int[]{2, 3},
                 2
         )); // [[2, 1], [1, 2]]
         System.out.println(new Solution().highestRankedKItems(
-                ArrayInputUtils.parseIntArr2("[[1,1,1],[0,0,1],[2,3,4]]"),
+                DebugUtils.parseIntArr2("[[1,1,1],[0,0,1],[2,3,4]]"),
                 new int[]{2, 3},
                 new int[]{0, 0},
                 3
         )); // [[2, 1], [2, 0]]
         System.out.println(new Solution().highestRankedKItems(
-                ArrayInputUtils.parseIntArr2("[[0,2,0]]"),
+                DebugUtils.parseIntArr2("[[0,2,0]]"),
                 new int[]{2, 2},
                 new int[]{0, 1},
                 1

@@ -1,6 +1,6 @@
 package normal.cat2.cat22.p2248.t1;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -33,7 +33,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().intersection(ArrayInputUtils.parseIntArr2("[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]")));
-        System.out.println(new Solution().intersection(ArrayInputUtils.parseIntArr2("[[1,2,3],[4,5,6]]")));
+        System.out.println(new Solution().intersection(DebugUtils.parseIntArr2("[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]")));
+        System.out.println(new Solution().intersection(DebugUtils.parseIntArr2("[[1,2,3],[4,5,6]]")));
     }
 }

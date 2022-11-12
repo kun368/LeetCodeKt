@@ -32,7 +32,7 @@ class Solution {
 }
 
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().rotateRight(ListNode.parse("1->2->3->4->5"), 0))
     println(Solution().rotateRight(ListNode.parse("0->1->2"), 4))
     println(Solution().rotateRight(ListNode.parse("1"), 1))

@@ -18,6 +18,7 @@ class Solution {
     TrieNode root;
     private List<List<Integer>>[] dp;
 
+    @SuppressWarnings("unchecked")
     public List<String> wordBreak(String s, List<String> wordDict) {
         root = new TrieNode();
         dp = new List[s.length()];

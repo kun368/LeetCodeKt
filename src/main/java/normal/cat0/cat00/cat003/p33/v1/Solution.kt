@@ -16,7 +16,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val arr = intArrayOf(4, 5, 6, 7, 0, 1, 2)
     for (i in arr) {
         println(Solution().search(arr, i))

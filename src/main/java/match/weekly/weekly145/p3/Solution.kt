@@ -21,7 +21,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().longestWPI(intArrayOf(9, 9, 6, 0, 6, 6, 9)))
     println(Solution().longestWPI(intArrayOf(1)))
     println(Solution().longestWPI(intArrayOf(9)))

@@ -14,7 +14,7 @@ class Solution {
             mp.put(t1, mp.getOrElse(t1) { 0 } + 1)
             mp.put(t2, mp.getOrElse(t2) { 0 } + 1)
         }
-        return mp.values.max() ?: 0
+        return mp.values.max()
     }
 }
 

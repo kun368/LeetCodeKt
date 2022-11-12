@@ -31,7 +31,7 @@ class Solution {
             precnt += cnt
         }
         zws /= 2
-        val zhongshu = v.withIndex().maxBy { it.value }!!.index
+        val zhongshu = v.withIndex().maxBy { it.value }.index
 
         return doubleArrayOf(min.toDouble(), max.toDouble(), sum * 1.0 / tot, zws, zhongshu.toDouble())
     }

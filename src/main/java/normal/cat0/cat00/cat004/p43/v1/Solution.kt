@@ -48,7 +48,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().multiply("2", "3"))
     println(Solution().multiply("123", "456"))
     println(Solution().multiply("0", "0"))

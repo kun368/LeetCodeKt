@@ -4,6 +4,6 @@ class Solution {
     fun isPowerOfTwo(n: Int): Boolean = n >= 0 && Integer.bitCount(n) == 1
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Integer.toBinaryString(-2147483648))
 }

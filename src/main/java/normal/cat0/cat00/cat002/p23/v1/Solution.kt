@@ -27,7 +27,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().mergeKLists(arrayOf(
             ListNode.parse("1->4->5"),
             ListNode.parse("1->3->4"),

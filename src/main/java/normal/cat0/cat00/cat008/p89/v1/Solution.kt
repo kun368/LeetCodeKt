@@ -8,6 +8,6 @@ class Solution {
     fun grayCode(n: Int) = (0 until 1.shl(n)).map { it.xor(it.shr(1)) }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().grayCode(2))
 }

@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     Solution().tupleSameProduct(intArrayOf(2, 3, 4, 6))
     Solution().tupleSameProduct(intArrayOf(1, 2, 4, 5, 10))
     Solution().tupleSameProduct(intArrayOf(2, 3, 4, 6, 8, 12))

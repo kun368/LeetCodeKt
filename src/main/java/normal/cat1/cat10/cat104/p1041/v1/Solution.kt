@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().isRobotBounded("GGLLGG"))
     println(Solution().isRobotBounded("GG"))
     println(Solution().isRobotBounded("GL"))

@@ -23,7 +23,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val test = Solution()
     val l1 = ListNode(2, ListNode(4, ListNode(3)))
     val l2 = ListNode(5, ListNode(6, ListNode(4)))

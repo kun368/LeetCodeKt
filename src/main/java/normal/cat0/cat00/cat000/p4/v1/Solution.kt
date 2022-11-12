@@ -17,7 +17,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().findMedianSortedArrays(intArrayOf(1, 3), intArrayOf(2)))
     println(Solution().findMedianSortedArrays(intArrayOf(1, 2), intArrayOf(3, 4)))
 }

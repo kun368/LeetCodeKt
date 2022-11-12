@@ -1,6 +1,6 @@
 package match.weekly.weekly170.p2;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.Arrays;
 
@@ -22,7 +22,7 @@ class Solution {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(new Solution().xorQueries(ArrayInputUtils.parseIntArr1("[1,3,4,8]"), ArrayInputUtils.parseIntArr2("[[0,1],[1,2],[0,3],[3,3]]"))));
-        System.out.println(Arrays.toString(new Solution().xorQueries(ArrayInputUtils.parseIntArr1("[4,8,2,10]"), ArrayInputUtils.parseIntArr2("[[2,3],[1,3],[0,0],[0,3]]"))));
+        System.out.println(Arrays.toString(new Solution().xorQueries(DebugUtils.parseIntArr1("[1,3,4,8]"), DebugUtils.parseIntArr2("[[0,1],[1,2],[0,3],[3,3]]"))));
+        System.out.println(Arrays.toString(new Solution().xorQueries(DebugUtils.parseIntArr1("[4,8,2,10]"), DebugUtils.parseIntArr2("[[2,3],[1,3],[0,0],[0,3]]"))));
     }
 }

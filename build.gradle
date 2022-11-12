@@ -1,0 +1,49 @@
+buildscript {
+    ext.kotlin_version = '1.7.21'
+
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id 'java'
+    id "org.jetbrains.kotlin.jvm" version "1.7.21"
+}
+
+group = 'com.zzkun'
+version = '1.0-SNAPSHOT'
+description = 'LeetCodeKt'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.21'
+    implementation 'cn.hutool:hutool-all:5.8.9'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'commons-io:commons-io:2.11.0'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test:1.7.20'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

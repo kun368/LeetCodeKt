@@ -50,7 +50,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(
         Solution().minWastedSpace(
             intArrayOf(2, 3, 5),

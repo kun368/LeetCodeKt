@@ -12,7 +12,7 @@ class LRUCache(capacity: Int) {
     fun put(key: Int, value: Int) = cache.put(key, value)
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val cache = LRUCache(2)
     cache.put(1, 1)
     cache.put(2, 2)

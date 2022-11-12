@@ -15,7 +15,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     for (i in 1..90) {
         println(Solution().climbStairs(i).toString() + ",")
     }

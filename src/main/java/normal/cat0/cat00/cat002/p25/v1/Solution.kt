@@ -31,7 +31,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().reverseKGroup(ListNode.parse("1->2->3->4->5"), 1))
     println(Solution().reverseKGroup(ListNode.parse("1->2->3->4->5"), 2))
     println(Solution().reverseKGroup(ListNode.parse("1->2->3->4->5"), 3))

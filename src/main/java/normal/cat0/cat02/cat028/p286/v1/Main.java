@@ -1,6 +1,6 @@
 package normal.cat0.cat02.cat028.p286.v1;
 
-import static utils.java.ArrayInputUtils.parseIntArr1;
+import static utils.java.DebugUtils.parseIntArr1;
 
 class Solution {
     public int findDuplicate(int[] nums) {

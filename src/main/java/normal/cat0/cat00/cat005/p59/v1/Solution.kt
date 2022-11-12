@@ -31,6 +31,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().generateMatrix(3).map { it.toList() }.toList())
 }

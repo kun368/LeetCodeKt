@@ -16,7 +16,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().isValid("()"))
     println(Solution().isValid("()[]{}"))
     println(Solution().isValid("(]"))

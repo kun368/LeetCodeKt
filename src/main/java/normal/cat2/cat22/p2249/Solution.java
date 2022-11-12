@@ -1,6 +1,6 @@
 package normal.cat2.cat22.p2249;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 class Solution {
     public int countLatticePoints(int[][] circles) {
@@ -22,9 +22,9 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().countLatticePoints(ArrayInputUtils.parseIntArr2("[[2,2,1]]")));
-        System.out.println(new Solution().countLatticePoints(ArrayInputUtils.parseIntArr2("[[2,2,2],[3,4,1]]")));
-        System.out.println(new Solution().countLatticePoints(ArrayInputUtils.parseIntArr2(
+        System.out.println(new Solution().countLatticePoints(DebugUtils.parseIntArr2("[[2,2,1]]")));
+        System.out.println(new Solution().countLatticePoints(DebugUtils.parseIntArr2("[[2,2,2],[3,4,1]]")));
+        System.out.println(new Solution().countLatticePoints(DebugUtils.parseIntArr2(
                 "[[8,9,6],[9,8,4],[4,1,1],[8,5,1],[7,1,1],[6,7,5],[7,1,1],[7,1,1],[5,5,3]]"))); // 141
     }
 }

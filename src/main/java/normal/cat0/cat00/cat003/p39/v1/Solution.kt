@@ -41,7 +41,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().combinationSum(intArrayOf(2, 3, 6, 7), 7))
     println(Solution().combinationSum(intArrayOf(2, 3, 5), 8))
 }

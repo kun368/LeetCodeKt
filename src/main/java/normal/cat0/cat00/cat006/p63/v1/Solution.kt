@@ -20,7 +20,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().uniquePathsWithObstacles(arrayOf(
             intArrayOf(0, 0, 0),
             intArrayOf(0, 1, 0),

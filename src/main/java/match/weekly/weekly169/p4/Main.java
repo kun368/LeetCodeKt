@@ -1,6 +1,6 @@
 package match.weekly.weekly169.p4;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.*;
 
@@ -84,14 +84,14 @@ class Solution {
 public class Main {
     public static void main(String[] args) {
         System.out.println(new Solution().isSolvable(
-                ArrayInputUtils.parseStrArr1("[\"SEND\",\"MORE\"]"), "MONEY"));
+                DebugUtils.parseStrArr1("[\"SEND\",\"MORE\"]"), "MONEY"));
         System.out.println(new Solution().isSolvable(
-                ArrayInputUtils.parseStrArr1("[\"SIX\",\"SEVEN\",\"SEVEN\"]"), "TWENTY"));
+                DebugUtils.parseStrArr1("[\"SIX\",\"SEVEN\",\"SEVEN\"]"), "TWENTY"));
         System.out.println(new Solution().isSolvable(
-                ArrayInputUtils.parseStrArr1("[\"THIS\",\"IS\",\"TOO\"]"), "FUNNY"));
+                DebugUtils.parseStrArr1("[\"THIS\",\"IS\",\"TOO\"]"), "FUNNY"));
         System.out.println(new Solution().isSolvable(
-                ArrayInputUtils.parseStrArr1("[\"LEET\",\"CODE\"]"), "POINT"));
+                DebugUtils.parseStrArr1("[\"LEET\",\"CODE\"]"), "POINT"));
         System.out.println(new Solution().isSolvable(
-                ArrayInputUtils.parseStrArr1("[\"SEIS\",\"CATORCE\",\"SETENTA\"]"), "NOVENTA"));
+                DebugUtils.parseStrArr1("[\"SEIS\",\"CATORCE\",\"SETENTA\"]"), "NOVENTA"));
     }
 }

@@ -25,6 +25,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().dailyTemperatures(intArrayOf(73, 74, 75, 71, 69, 72, 76, 73)).toList())
 }

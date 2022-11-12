@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().maxAbsValExpr(
             intArrayOf(1, 2, 3, 4),
             intArrayOf(-1, 4, 5, 6)

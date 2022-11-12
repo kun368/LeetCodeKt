@@ -33,7 +33,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().findKthLargest(intArrayOf(3, 2, 1, 5, 6, 4), 2))
     println(Solution().findKthLargest(intArrayOf(3, 2, 3, 1, 2, 4, 5, 5, 6), 4))
 }

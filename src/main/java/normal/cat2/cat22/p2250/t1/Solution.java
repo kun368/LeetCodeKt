@@ -1,6 +1,6 @@
 package normal.cat2.cat22.p2250.t1;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.*;
 
@@ -43,10 +43,10 @@ class Solution {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(new Solution().countRectangles(
-                ArrayInputUtils.parseIntArr2("[[1,2],[2,3],[2,5]]"),
-                ArrayInputUtils.parseIntArr2("[[2,1],[1,4]]"))));
+                DebugUtils.parseIntArr2("[[1,2],[2,3],[2,5]]"),
+                DebugUtils.parseIntArr2("[[2,1],[1,4]]"))));
         System.out.println(Arrays.toString(new Solution().countRectangles(
-                ArrayInputUtils.parseIntArr2("[[1,1],[2,2],[3,3]]"),
-                ArrayInputUtils.parseIntArr2("[[1,3],[1,1]]"))));
+                DebugUtils.parseIntArr2("[[1,1],[2,2],[3,3]]"),
+                DebugUtils.parseIntArr2("[[1,3],[1,1]]"))));
     }
 }

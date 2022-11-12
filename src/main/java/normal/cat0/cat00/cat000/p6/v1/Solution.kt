@@ -16,7 +16,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().convert("PAYPALISHIRING", 3))
     println(Solution().convert("PAYPALISHIRING", 4))
     println(Solution().convert("PAYPALISHIRING", 1))

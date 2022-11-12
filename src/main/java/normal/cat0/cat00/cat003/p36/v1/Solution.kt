@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().isValidSudoku(arrayOf(
             charArrayOf('5','3','.','.','7','.','.','.','.'),
             charArrayOf('6','.','.','1','9','5','.','.','.'),

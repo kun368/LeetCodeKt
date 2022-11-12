@@ -16,7 +16,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().generateParenthesis(0))
     println(Solution().generateParenthesis(1))
     println(Solution().generateParenthesis(3))

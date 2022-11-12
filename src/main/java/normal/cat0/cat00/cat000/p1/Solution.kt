@@ -14,7 +14,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val test = Solution()
 //    val ret = test.twoSum(intArrayOf(2, 7, 11, 15), 9)
     val ret = test.twoSum(intArrayOf(3, 2, 4), 6)

@@ -2,7 +2,7 @@ package normal.cat0.cat00.cat003.p30.v1;
 
 import java.util.*;
 
-import static utils.java.ArrayInputUtils.parseStrArr1;
+import static utils.java.DebugUtils.parseStrArr1;
 
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {

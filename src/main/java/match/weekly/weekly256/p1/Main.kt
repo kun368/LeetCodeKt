@@ -2,7 +2,7 @@ package match.weekly.weekly256.p1
 
 class Solution {
     fun minimumDifference(nums: IntArray, k: Int): Int =
-        nums.sort().let { (k..nums.size).map { nums[it - 1] - nums[it - k] }.min()!! }
+        nums.sort().let { (k..nums.size).map { nums[it - 1] - nums[it - k] }.min() }
 }
 
 fun main() {

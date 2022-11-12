@@ -22,6 +22,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().mergeTwoLists(ListNode.parse("1->2->4"), ListNode.parse("1->3->4")))
 }

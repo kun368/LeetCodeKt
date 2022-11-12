@@ -16,6 +16,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().reverseList(ListNode.parse("1->2->3->4->5")))
 }

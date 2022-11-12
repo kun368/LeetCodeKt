@@ -25,7 +25,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().numIslands(arrayOf(
             "11110".toCharArray(),
             "11010".toCharArray(),

@@ -2,13 +2,9 @@ package utils.java;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.ArrayUtil;
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.annotation.JSONType;
-import com.alibaba.fastjson.serializer.SerializerFeature;
 
 import java.util.*;
 
-@JSONType(orders = {"val", "left", "right"})
 public class TreeNode {
 
     public int val;
@@ -57,10 +53,6 @@ public class TreeNode {
             roots = nextRoots;
         }
         return root;
-    }
-
-    public String toJSONString() {
-        return JSON.toJSONString(this, SerializerFeature.PrettyFormat);
     }
 
     public List<Integer> toLeetCodeList() {

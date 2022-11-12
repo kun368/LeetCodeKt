@@ -7,7 +7,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().relativeSortArray(
             intArrayOf(2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19),
             intArrayOf(2, 1, 4, 3, 9, 6)

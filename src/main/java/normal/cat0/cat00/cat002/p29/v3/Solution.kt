@@ -24,7 +24,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().divide(10, 3))
     println(Solution().divide(7, -3))
     println(Solution().divide(-2147483648, -1))

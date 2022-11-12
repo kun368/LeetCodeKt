@@ -30,7 +30,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().shortestAlternatingPaths(
             3,
             arrayOf(intArrayOf(0, 1), intArrayOf(1, 2)),

@@ -7,6 +7,6 @@ class Solution {
     fun reverseWords(s: String): String = s.split(' ').joinToString(" ") { it.reversed() }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().reverseWords("Let's take LeetCode contest"))
 }

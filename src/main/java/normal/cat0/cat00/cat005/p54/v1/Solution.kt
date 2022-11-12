@@ -35,7 +35,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().spiralOrder(arrayOf(
             intArrayOf(1, 2, 3),
             intArrayOf(4, 5, 6),

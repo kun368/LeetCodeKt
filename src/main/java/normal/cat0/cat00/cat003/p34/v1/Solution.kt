@@ -30,7 +30,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().searchRange(intArrayOf(5, 7, 7, 8, 8, 10), 8).toList())
     println(Solution().searchRange(intArrayOf(5, 7, 7, 8, 8, 10), 6).toList())
 }

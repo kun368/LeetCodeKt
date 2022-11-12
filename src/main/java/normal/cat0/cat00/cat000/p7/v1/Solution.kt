@@ -9,7 +9,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().reverse(123))
     println(Solution().reverse(-123))
     println(Solution().reverse(120))

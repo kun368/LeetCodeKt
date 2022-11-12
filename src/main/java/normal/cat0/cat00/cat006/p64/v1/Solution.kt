@@ -20,7 +20,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().minPathSum(arrayOf(
             intArrayOf(1, 3, 1),
             intArrayOf(1, 5, 1),

@@ -33,6 +33,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().letterCombinations("23"))
 }

@@ -6,7 +6,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().strStr("hello", "ll"))
     println(Solution().strStr("aaaaa", "bba"))
 }

@@ -21,6 +21,6 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().permute(intArrayOf(1, 2, 3)))
 }

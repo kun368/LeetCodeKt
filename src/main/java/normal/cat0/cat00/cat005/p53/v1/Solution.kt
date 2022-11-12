@@ -8,7 +8,7 @@ class Solution {
         var minSum = 0
         var sum = 0
         var best = nums[0]
-        for ((i, v) in nums.withIndex()) {
+        for ((_, v) in nums.withIndex()) {
             sum += v
             best = maxOf(best, sum - minSum)
             minSum = minOf(minSum, sum)
@@ -17,7 +17,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)))
     println(Solution().maxSubArray(intArrayOf(-1)))
     println(Solution().maxSubArray(intArrayOf(-2, -1)))

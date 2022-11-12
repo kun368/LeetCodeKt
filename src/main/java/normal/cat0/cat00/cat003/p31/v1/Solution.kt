@@ -25,7 +25,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     arrayOf(intArrayOf(1, 2, 3),
             intArrayOf(3, 2, 1),
             intArrayOf(1, 1, 5),

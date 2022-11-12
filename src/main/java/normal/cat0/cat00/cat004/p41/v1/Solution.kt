@@ -32,7 +32,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().firstMissingPositive(intArrayOf(1, 2, 0)))
     println(Solution().firstMissingPositive(intArrayOf(3, 4, -1, 1)))
     println(Solution().firstMissingPositive(intArrayOf(7, 8, 9, 11, 12)))

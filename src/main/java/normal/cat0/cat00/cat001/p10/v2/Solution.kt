@@ -43,7 +43,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().isMatch("aa", "a"))
     println(Solution().isMatch("aa", "a*"))
     println(Solution().isMatch("ab", ".*"))

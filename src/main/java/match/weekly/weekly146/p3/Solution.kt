@@ -29,7 +29,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().mctFromLeafValues(intArrayOf(6, 2, 4)))
 //    println(Solution().mctFromLeafValues(intArrayOf(2, 4, 6, 8, 10)))
 }

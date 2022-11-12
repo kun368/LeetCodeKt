@@ -19,7 +19,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().majorityElement(intArrayOf(3, 2, 3)))
     println(Solution().majorityElement(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
     println(Solution().majorityElement(intArrayOf(2)))

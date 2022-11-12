@@ -12,7 +12,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().findUnsortedSubarray(intArrayOf(2, 6, 4, 8, 10, 9, 15)))
     println(Solution().findUnsortedSubarray(intArrayOf(2, 6, 4, 8, 10, 9, 15).sortedArray()))
     println(Solution().findUnsortedSubarray(intArrayOf()))

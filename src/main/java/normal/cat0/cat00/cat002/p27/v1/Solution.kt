@@ -12,7 +12,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     println(Solution().removeElement(intArrayOf(3, 2, 2, 3), 3))
     println(Solution().removeElement(intArrayOf(0, 1, 2, 2, 3, 0, 4, 2), 2))
 }

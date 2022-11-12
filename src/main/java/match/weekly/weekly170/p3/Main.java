@@ -1,6 +1,6 @@
 package match.weekly.weekly170.p3;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 import java.util.*;
 
@@ -52,13 +52,13 @@ class Solution {
 public class Main {
     public static void main(String[] args) {
         System.out.println(new Solution().watchedVideosByFriends(
-                ArrayInputUtils.parseStrList2("[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]"),
-                ArrayInputUtils.parseIntArr2("[[1,2],[0,3],[0,3],[1,2]]"),
+                DebugUtils.parseStrList2("[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]"),
+                DebugUtils.parseIntArr2("[[1,2],[0,3],[0,3],[1,2]]"),
                 0, 1
         ));
         System.out.println(new Solution().watchedVideosByFriends(
-                ArrayInputUtils.parseStrList2("[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]"),
-                ArrayInputUtils.parseIntArr2("[[1,2],[0,3],[0,3],[1,2]]"),
+                DebugUtils.parseStrList2("[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]"),
+                DebugUtils.parseIntArr2("[[1,2],[0,3],[0,3],[1,2]]"),
                 0, 2
         ));
     }

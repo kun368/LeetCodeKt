@@ -1,6 +1,6 @@
 package match.weekly.weekly171.p3;
 
-import utils.java.ArrayInputUtils;
+import utils.java.DebugUtils;
 
 class Solution {
 
@@ -44,8 +44,8 @@ class Solution {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Solution().makeConnected(6, ArrayInputUtils.parseIntArr2("[[0,1],[0,2],[0,3],[1,2],[1,3]]")));
-        System.out.println(new Solution().makeConnected(6, ArrayInputUtils.parseIntArr2("[[0,1],[0,2],[0,3],[1,2]]")));
-        System.out.println(new Solution().makeConnected(5, ArrayInputUtils.parseIntArr2("[[0,1],[0,2],[3,4],[2,3]]")));
+        System.out.println(new Solution().makeConnected(6, DebugUtils.parseIntArr2("[[0,1],[0,2],[0,3],[1,2],[1,3]]")));
+        System.out.println(new Solution().makeConnected(6, DebugUtils.parseIntArr2("[[0,1],[0,2],[0,3],[1,2]]")));
+        System.out.println(new Solution().makeConnected(5, DebugUtils.parseIntArr2("[[0,1],[0,2],[3,4],[2,3]]")));
     }
 }

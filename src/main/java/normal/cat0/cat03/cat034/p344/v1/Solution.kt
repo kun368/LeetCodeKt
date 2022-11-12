@@ -10,7 +10,7 @@ class Solution {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val arr = charArrayOf('1', '2', '3', '4')
     Solution().reverseString(arr)
     println(arr.contentToString())
