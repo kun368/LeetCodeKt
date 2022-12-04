@@ -20,10 +20,6 @@ plugins {
     id "org.jetbrains.kotlin.jvm" version "1.7.21"
 }
 
-configurations {
-    scalaCompilerPlugin
-}
-
 group = 'com.zzkun'
 version = '1.0-SNAPSHOT'
 description = 'LeetCodeKt'
@@ -54,6 +50,21 @@ dependencies {
     testImplementation 'org.scalatest:scalatest_2.13:3.2.13'
     testImplementation 'junit:junit:4.13.2'
     compileOnly 'org.projectlombok:lombok:1.18.24'
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala', 'src/main/java']
+        }
+        java {
+            srcDirs = []
+        }
+    }
+}
+
+configurations {
+    scalaCompilerPlugin
 }
 
 tasks.withType(JavaCompile) {
