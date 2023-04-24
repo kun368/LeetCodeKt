@@ -2,14 +2,6 @@ from utils.python.predef import *
 
 
 class Solution:
-
-    def get_corners(self, xx, yy):
-        res = []
-        for x in xx:
-            for y in yy:
-                res.append((x, y))
-        return res
-
     def point_in_corners(self, a, b, x, y, r):
         return x - r/2.0 <= a <= x + r/2.0 and y - r/2.0 <= b <= y + r/2.0
 
@@ -17,11 +9,11 @@ class Solution:
         corners = set()
         for a, b, c in forceField:
             for d, e, f in forceField:
-                xx = (a - c/2, a + c/2, d - f/2, d + f/2)
-                yy = (b - c/2, b + c/2, e - f/2, e + f/2)
-                corners |= set(self.get_corners(xx, yy))
-
-        best_cnt = 0
+                for x in (a - c/2, a + c/2, d - f/2, d + f/2):
+                    for y in (b - c/2, b + c/2, e - f/2, e + f/2):
+                        if self.point_in_corners(x, y, a, b, c) and self.point_in_corners(x, y, d, e, f):
+                            corners.add((x, y))
+        best_cnt = 1
         for a, b in corners:
             cnt = 0
             for x, y, r in forceField:
