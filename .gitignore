@@ -3,6 +3,7 @@
 .idea/*
 *.class
 target/
+bin/
 .project
 .settings/
 .classpath
