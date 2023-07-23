@@ -1,6 +1,7 @@
 from typing import *
 
 DIR_4 = ((-1, 0), (1, 0), (0, -1), (0, 1))
+MOD = 1000000007
 
 
 class UnionFind:
