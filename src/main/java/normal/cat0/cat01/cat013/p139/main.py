@@ -40,5 +40,5 @@ class Solution:
 if __name__ == '__main__':
     print(Solution().wordBreak(s="leetcode", wordDict=["leet", "code"]))
     print(Solution().wordBreak(s="applepenapple", wordDict=["apple", "pen"]))
-    print(Solution().wordBreak(s="catsandog", wordDict=["cats", "dog", "sand", "and", "cat"]))
+    print(Solution().wordBreak(s="catsandog", wordDict=["cats", "dog", "sand", "and", "cat29"]))
     print(Solution().wordBreak(s="cars", wordDict=["car", "ca", "rs"]))
