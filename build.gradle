@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.7.21'
+    ext.kotlin_version = '1.9.23'
 
     repositories {
         maven {
@@ -16,7 +16,7 @@ buildscript {
 
 plugins {
     id 'java'
-    id "org.jetbrains.kotlin.jvm" version "1.7.21"
+    id "org.jetbrains.kotlin.jvm" version "1.9.23"
 }
 
 group = 'com.zzkun'
@@ -33,17 +33,17 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.21'
-    implementation 'cn.hutool:hutool-all:5.8.9'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.0'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
-    implementation 'org.apache.commons:commons-lang3:3.12.0'
-    implementation 'com.google.guava:guava:31.1-jre'
-    implementation 'commons-io:commons-io:2.11.0'
-    testImplementation 'org.jetbrains.kotlin:kotlin-test:1.7.20'
-    compileOnly 'org.projectlombok:lombok:1.18.24'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.23'
+    implementation 'cn.hutool:hutool-all:5.8.27'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.17.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'com.google.guava:guava:33.1.0-jre'
+    implementation 'commons-io:commons-io:2.16.1'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test:1.9.23'
+    compileOnly 'org.projectlombok:lombok:1.18.32'
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = "UTF-8"
 }
