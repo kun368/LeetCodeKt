@@ -2,7 +2,12 @@
 
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/kun368/LeetCodeKt/blob/master/LICENSE)
+
+[![Language](https://img.shields.io/badge/language-python-blue.svg)](https://github.com/kun368/LeetCodeKt)
 [![Language](https://img.shields.io/badge/language-kotlin-orange.svg)](https://github.com/kun368/LeetCodeKt)
+[![Language](https://img.shields.io/badge/language-java-red.svg)](https://github.com/kun368/LeetCodeKt)
+
+---
 
 [力扣 (LeetCode)](https://leetcode-cn.com/) Kotlin/Java/Python 实现
 
