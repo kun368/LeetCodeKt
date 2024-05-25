@@ -1,6 +1,5 @@
 from utils.python.predef import *
 
-
 class Solution:
     def maximumScore(self, nums: List[int], k: int) -> int:
         from sortedcontainers import SortedList
