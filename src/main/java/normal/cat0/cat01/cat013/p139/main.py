@@ -18,7 +18,7 @@ class Solution:
                     cur.sons[c] = Node(0)
                 cur = cur.sons[c]
                 if i == len(w) - 1:
-                    cur.value = 1
+                    cur.v11 = 1
 
         @functools.cache
         def dfs(idx):
@@ -30,7 +30,7 @@ class Solution:
                 if c not in cur.sons:
                     break
                 cur = cur.sons[c]
-                if cur.value == 1 and dfs(i + 1):
+                if cur.v11 == 1 and dfs(i + 1):
                     return True
             return False
 
